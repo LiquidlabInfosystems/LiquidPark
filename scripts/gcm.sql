@@ -1,0 +1,14 @@
+CREATE TABLE `gcm` (
+  `Id` int(11) NOT NULL AUTO_INCREMENT,
+  `GCMToken` longtext NOT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insert_gcm`(IN gcmtoken LONGTEXT)
+BEGIN
+INSERT INTO `pgs`.`gcm`
+(`GCMToken`)
+VALUES
+(gcmtoken);
+END$$
+DELIMITER ;

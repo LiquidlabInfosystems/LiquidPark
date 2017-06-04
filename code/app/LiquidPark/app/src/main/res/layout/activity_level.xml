@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#FF2A282A">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LULU MALL MLCP STATUS"
+        android:id="@+id/textView2"
+        android:textColor="#FFD7CFCB"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textSize="26dp"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Level Occupancy Details"
+        android:id="@+id/textView3"
+        android:textAlignment="center"
+        android:textColor="#FFD7CFCB"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="26dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Spaces"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="36dp"
+        android:id="@+id/textView"
+        android:layout_alignStart="@+id/textView3" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="100dp"
+        android:text="0"
+        android:textColor="#ffff00"
+        android:textSize="18dp"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignEnd="@+id/textView3"
+        android:id="@+id/txtTotal1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available Spaces"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="100dp"
+        android:text="0"
+        android:textColor="#00CD00"
+        android:textSize="18dp"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_alignEnd="@+id/textView3"
+        android:id="@+id/txtAvailable1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Occupied Spaces"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/textView7"
+        android:layout_alignStart="@+id/textView7" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="100dp"
+        android:text="0"
+        android:textColor="#ff0000"
+        android:textSize="18dp"
+        android:layout_alignTop="@+id/textView8"
+        android:layout_alignEnd="@+id/textView3"
+        android:id="@+id/txtOccupied" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#626262"
+        android:textAlignment="textEnd"
+        android:textSize="16dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/textView10"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/textView8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zone1"
+        android:textColor="#7e7a7a"
+        android:textSize="20dp"
+        android:id="@+id/txtZone1"
+        android:layout_above="@+id/txtTotal1"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Spaces"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:id="@+id/textView12"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textView8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="100dp"
+        android:text="0"
+        android:textColor="#ffff00"
+        android:textSize="18dp"
+        android:id="@+id/txtTotal2"
+        android:layout_alignTop="@+id/textView12"
+        android:layout_alignStart="@+id/txtOccupied" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available Spaces"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:id="@+id/textView14"
+        android:layout_below="@+id/txtTotal2"
+        android:layout_alignLeft="@+id/textView8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="100dp"
+        android:text="0"
+        android:textColor="#00CD00"
+        android:textSize="18dp"
+        android:id="@+id/txtAvailable2"
+        android:layout_alignTop="@+id/textView14"
+        android:layout_alignStart="@+id/txtTotal2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Occupied Spaces"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:id="@+id/textView16"
+        android:layout_below="@+id/txtAvailable2"
+        android:layout_alignLeft="@+id/textView8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="100dp"
+        android:text="0"
+        android:textColor="#ff0000"
+        android:textSize="18dp"
+        android:id="@+id/txtOccupied2"
+        android:layout_below="@+id/txtAvailable2"
+        android:layout_alignStart="@+id/txtAvailable2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zone2"
+        android:textColor="#7e7a7a"
+        android:textSize="20dp"
+        android:id="@+id/txtZone2"
+        android:layout_above="@+id/textView12"
+        android:layout_alignStart="@+id/textView12" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Spaces"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:layout_marginTop="55dp"
+        android:id="@+id/textView11"
+        android:layout_below="@+id/textView16"
+        android:layout_alignStart="@+id/textView16" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="100dp"
+        android:text="0"
+        android:textColor="#ffff00"
+        android:textSize="18dp"
+        android:id="@+id/txtTotal3"
+        android:layout_alignTop="@+id/textView11"
+        android:layout_alignStart="@+id/txtOccupied2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available Spaces"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:id="@+id/textView15"
+        android:layout_below="@+id/textView11"
+        android:layout_alignStart="@+id/textView11" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="100dp"
+        android:text="0"
+        android:textColor="#00CD00"
+        android:textSize="18dp"
+        android:id="@+id/txtAvailable3"
+        android:layout_below="@+id/txtTotal3"
+        android:layout_alignStart="@+id/txtTotal3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Occupied Spaces"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:id="@+id/textView18"
+        android:layout_below="@+id/textView15"
+        android:layout_alignStart="@+id/textView15" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="100dp"
+        android:text="0"
+        android:textColor="#ff0000"
+        android:textSize="18dp"
+        android:id="@+id/txtOccupied3"
+        android:layout_below="@+id/txtAvailable3"
+        android:layout_alignStart="@+id/txtAvailable3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zone3"
+        android:textColor="#7e7a7a"
+        android:textSize="20dp"
+        android:id="@+id/txtZone3"
+        android:layout_above="@+id/txtTotal3"
+        android:layout_alignStart="@+id/textView11" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Zones"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:id="@+id/textView19"
+        android:layout_above="@+id/textView10"
+        android:layout_alignStart="@+id/textView18"
+        android:layout_toStartOf="@+id/txtOccupied3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="100dp"
+        android:text="3"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:id="@+id/textView20"
+        android:layout_above="@+id/textView10"
+        android:layout_alignStart="@+id/txtOccupied3"
+        android:layout_alignEnd="@+id/txtOccupied3" />
+
+</RelativeLayout>
